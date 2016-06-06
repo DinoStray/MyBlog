@@ -19,6 +19,7 @@ Tips:
 如下图选中"Enable All Logs"
 
 ![Enable All Logs](http://7xoj7k.com1.z0.glb.clouddn.com/16-6-3/24273146.jpg)
+
 ## 查询硬件信息
 如需查询IMEI等信息, 可以在拨号界面输入`*#5388#*`
 

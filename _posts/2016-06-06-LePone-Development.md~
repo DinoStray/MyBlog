@@ -1,11 +1,10 @@
 ---
 layout: post
-title: 乐视手机x2开发
-category: android
-tags: [android]
+title: 使用乐视2 x2手机调试开发注意事项
+category: 乐视
+tags: [乐视]
 ---
 
-# 使用乐视2 x2手机调试开发应用注意事项
 ## 开启全部日志
 乐视手机默认只输出Info以下级别日志, Verbose和Debug均不输出
 
