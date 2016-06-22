@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 设置Android Studio JDK
+title: 设置Android Studio启动依赖JDK
 category: IDE
 tags: [AS]
 ---
