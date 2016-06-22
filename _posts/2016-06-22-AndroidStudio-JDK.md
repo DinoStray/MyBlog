@@ -4,7 +4,7 @@ title: 设置Android Studio启动依赖JDK
 category: IDE
 tags: [AS]
 ---
-# Android Studio不喜欢OpenJDK
+## Android Studio不喜欢OpenJDK
 
 启动AS的时候弹出警告：
 
@@ -21,7 +21,7 @@ elif [ -x "$IDE_HOME/jre/jre/bin/java" ] && "$IDE_HOME/jre/jre/bin/java" -versio
 ```
 由此分析只要设置STUDIO_JDK这个系统变量， 就可以指定AS运行的JDK了
 
-# 设置Android Studio启动时调用的JDK环境
+## 设置Android Studio启动时调用的JDK环境
 
 下载oracle的官方JDK， 解压到{your_oracle_jdk_home}（我的解压目录：/opt/jdk1.8.0_74 ）
 
@@ -35,7 +35,7 @@ elif [ -x "$IDE_HOME/jre/jre/bin/java" ] && "$IDE_HOME/jre/jre/bin/java" -versio
 
 再次启动AS，不再弹出异常提示。
 
-# 确认AS启动时调用的JDK
+## 确认AS启动时调用的JDK
 
 在AS中点击工具栏 (Help | Show log in files)
 
