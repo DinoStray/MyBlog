@@ -9,7 +9,7 @@ tags: [AS]
 
 > "OpenJDK shows intermittent performance and UI issues. We recommend using the Oracle JRE/JDK."
 
-看来AS对OpenJDK支持不好， 研究了一下AS的启动脚本， 发现如下代码：
+看来AS对OpenJDK支持不好， 研究了一下AS的启动脚本（bin/studio.sh)， 发现如下代码：
 
 ```shell
 if [ -n "$STUDIO_JDK" -a -x "$STUDIO_JDK/bin/java" ]; then
