@@ -41,3 +41,8 @@ elif [ -x "$IDE_HOME/jre/jre/bin/java" ] && "$IDE_HOME/jre/jre/bin/java" -versio
 
 OK， 确定修改成功
 > 注意: 此方法修改的是AS 这个IDE的运行JDK， 不是你的java、安卓代码的运行JDK， 请勿混淆
+This paragraph has a quote
+
+> That is pulled out like this
+
+from the text my post.
