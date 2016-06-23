@@ -2,7 +2,7 @@
 layout: post
 title: 使用乐视2 x2手机调试开发注意事项
 category: 乐视
-tags: [乐视][手机][日志]
+tags: [乐视,手机,日志]
 ---
 
 ## 开启全部日志
