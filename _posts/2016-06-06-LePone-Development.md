@@ -2,7 +2,7 @@
 layout: post
 title: 使用乐视2 x2手机调试开发注意事项
 category: 乐视
-tags: [乐视]
+tags: [乐视][手机][日志]
 ---
 
 ## 开启全部日志
@@ -32,4 +32,3 @@ Tips:
 因为是双卡手机, 会有两个IMEI号码
 
 ![IMEI信息](http://7xoj7k.com1.z0.glb.clouddn.com/md_%E4%B9%90%E8%A7%86%E6%89%8B%E6%9C%BA%E6%9F%A5%E8%AF%A2%E5%9B%BA%E4%BB%B6%E4%BF%A1%E6%81%AF_02.png)
-

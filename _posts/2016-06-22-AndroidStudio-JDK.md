@@ -2,7 +2,7 @@
 layout: post
 title: 设置Android Studio启动依赖JDK
 category: IDE
-tags: [AS]
+tags: [AS][JDK]
 ---
 ## Android Studio不喜欢OpenJDK
 
