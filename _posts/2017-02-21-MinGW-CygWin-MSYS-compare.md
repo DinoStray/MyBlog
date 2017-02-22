@@ -48,4 +48,7 @@ Cygwin 和 MinGW 虽然产生的目的不同, 但是我中有你, 你中有我�
 MSYS 服务于 MinGW 却 fork 自 Cygwin, 而 Cygwin 中也包含 MinGW 迁移后的 GCC 套件, 用于开发纯粹的 win32 程序.
 
 个人观点:
-> 两款软件互利互补, 不存在谁比谁更优秀. 但 Cygwin 显然格局更大, 可以完整包含 MinGW. 开发者应该首选 Cygwin.
+> 两款软件互利互补, 不存在谁比谁更优秀.  
+> Cygwin 显然格局更大, 可以完整包含 MinGW.  
+> 目前我所在的项目组就在 Cygwin 中搭建了一套支持 repo 的 android 开发环境, 使用起来非常 high  
+> 开发者应该首选 Cygwin.
