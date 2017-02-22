@@ -9,7 +9,7 @@ tags: [POSIX API,Windows 编程]
 
 POSIX( Portable Operating System Interface )本身是个标准, 定义了操作系统级别 API 函数. 如果所有操作系统都支持此标准, 那同一套源代码可以在所有系统中编译后运行.
 
-对此标准, windows 敷衍对待, Unix 系统家族却不分你我, 彼此共生.
+对此标准, windows 敷衍到令人发指, Unix 系统家族却不分你我, 彼此共生.
 
 因此目前提到 POSIX 基本等同于 Linux 系统 API.
 
