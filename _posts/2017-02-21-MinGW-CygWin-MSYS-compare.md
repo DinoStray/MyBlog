@@ -7,11 +7,11 @@ tags: [POSIX API,Windows 编程]
 
 ## POSIX
 
-POSIX( Portable Operating System Interface )本身是个标准, 定义了操作系统级别 API 函数. 如果所有操作系统都支持此标准, 那同一套源代码可以在所有系统中编译后运行.
+POSIX( Portable Operating System Interface )是个标准, 定义了操作系统应该为应用程序提供的接口: 系统调用函数. 如果所有操作系统都支持此标准, 那同一套源代码可以在所有系统中编译后运行.
 
 对此标准, windows 敷衍到令人发指, Unix 系统家族却不分你我, 彼此共生.
 
-因此目前提到 POSIX 基本等同于 Linux 系统 API.
+Linux 与 Unix 这么像的一个原因, 就是他们都遵循 POSIX 标准.
 
 ## CygWin
 
@@ -47,4 +47,4 @@ Cygwin 和 MinGW 虽然产生的目的不同, 但是我中有你, 你中有我�
 
 MSYS 服务于 MinGW 却 fork 自 Cygwin, 而 Cygwin 中也包含 MinGW 迁移后的 GCC 套件, 用于开发纯粹的 win32 程序.
 
-个人观点: 两款软件是互利共生的, 不存在谁比谁更优秀. 但 Cygwin 显然格局更大, 可以完整包含 MinGW.
+个人观点: 两款软件是互利共生的, 不存在谁比谁更优秀. 但 Cygwin 显然格局更大, 可以完整包含 MinGW. 开发者应该首选 Cygwin.
