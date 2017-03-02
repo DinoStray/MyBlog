@@ -5,6 +5,8 @@ category: 工具
 tags: [POSIX API,Windows 编程]
 ---
 
+要比较 MinGW 和 Cygwin, 需要先理解 POSIX.
+
 ## POSIX
 
 POSIX( Portable Operating System Interface )是个标准, 定义了操作系统应该为应用程序提供的接口: 系统调用函数. 如果所有操作系统都支持此标准, 那同一套源代码可以在所有系统中编译后运行.
@@ -39,7 +41,7 @@ MinGW 明确表示, 永远不会考虑移植 POSIX API, 仅能通过 MinGW 调�
 
 > 简化版 Cygwin, MinGW 的小伙伴
 
-MSYS 和 MSYS2 均 fork 自 Cygwin, 是 Cygwin 的简化版, 为 MinGW 提供一系列 Linux 命令行工具.
+MSYS 和 MSYS2 均 fork 自 Cygwin, 是 Cygwin 的简化版, 为 MinGW 提供一系列迁移自 Linux 的命令行工具.
 
 ## 总结
 
