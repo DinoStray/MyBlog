@@ -4,9 +4,10 @@ title: 设置Android Studio启动依赖JDK
 category: Dev-tools
 tags: [AS,JDK]
 ---
-## Android Studio不喜欢OpenJDK
 
-启动AS的时候弹出警告：
+Android Studio 对 OpenJDK 支持不好, 可以指定 Oracle 官方 JDK.
+
+最近, 启动AS的时候弹出警告：
 
 > "OpenJDK shows intermittent performance and UI issues. We recommend using the Oracle JRE/JDK."
 
