@@ -27,5 +27,3 @@ tags: [编辑器]
 > Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.
 
 是的, Atom 才是一款文本编辑器, 它对应的是 UltraEdit 这类软件.
-
-Atom 是可以在一个 window 里打开多个文件夹的.
