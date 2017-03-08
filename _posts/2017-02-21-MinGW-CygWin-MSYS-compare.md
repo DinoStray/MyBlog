@@ -24,6 +24,11 @@ CygWin 通过调用 windows API 实现了大部分 POSIX API, 封装在 cygwin1.
 1. 使调用了 Linux API 的源代码, 通过 Cygwin 重新编译后, 可以运行在 windows
 2. 可以在 windows 中开发 Linux 应用
 
+但也有缺陷:
+
+1. 基于 Cygwin 编译的 windows 应用, 必须在有 cygwin1.dll 的环境中运行.
+2. 运行速度也比 MinGW 编译后的原生应用慢, 因为中间涉及到一层 API 转换.
+
 ## MinGW
 
 > 仅使用自由软件编译出纯粹的 win32 程序.
