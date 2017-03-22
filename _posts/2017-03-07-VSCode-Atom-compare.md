@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visual Studio Code 和 Atom 比较
+title: Atom 和 VS Code  比较
 category: 工具
 tags: [编辑器]
 ---
 
-比较 VS Code 和 Atom, 首先要看他们为何被创造.
+比较 VS Code 和 Atom, 先看他们产生的目的.
 
-很多文章都是从功能细节来比较, 毕竟两款软件都支持插件拓展, 对使用者而言, 功能细节趋于一致只是时间问题. 而存在的意义不同, 才是比较他们的关键点.
+很多比较都是从功能细节的角度. 两款软件都支持插件拓展, 对使用者而言, 功能细节趋于一致只是时间问题. 而产生目的不同, 才是比较他们的关键.
 
 ## VS Code
 就像名字里提到的, 这是一个可视代码编辑器, 注意 code 这个单词, 这个编辑器就是为代码而生.
@@ -27,3 +27,4 @@ tags: [编辑器]
 > Atom is a text editor that's modern, approachable, yet hackable to the core—a tool you can customize to do anything but also use productively without ever touching a config file.
 
 是的, Atom 才是一款文本编辑器, 它对应的是 UltraEdit 这类软件.
+我的博客和笔记, 目前都是用 Atom 写的.
