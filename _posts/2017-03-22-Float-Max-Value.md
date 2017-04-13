@@ -1,8 +1,8 @@
 ---
 layout: post
 title: IEEE 754 浮点数格式, 能表示的最大值
-category: 工具
-tags: [编辑器]
+category: 计算机基础
+tags: [计算机基础]
 ---
 这是 2012年 计算机研究生专业课考试里的一道选择题.
 

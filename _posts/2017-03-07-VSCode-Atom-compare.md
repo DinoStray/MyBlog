@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Atom 和 VS Code  比较
-category: 工具
+category: Dev-tools
 tags: [编辑器]
 ---
 
