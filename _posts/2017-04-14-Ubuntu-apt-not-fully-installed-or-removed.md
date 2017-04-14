@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ubuntu apt 命令安装软件失败后, 一直提示错误
+title: Ubuntu apt 命令安装软件失败后, 再安装其他软件一直提示错误
 category: Dev-tools
 tags: [Ubuntu,apt]
 ---
@@ -14,6 +14,10 @@ tags: [Ubuntu,apt]
 >Errors were encountered while processing:
 samba4
 E: Sub-process /usr/bin/dpkg returned an error code (1)
+
+解决办法:
+
+删除所有未完整安装的软件包
 
 ```shell
 sudo apt-get --force-yes remove <package-name>
