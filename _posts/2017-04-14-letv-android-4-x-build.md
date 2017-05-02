@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Letv android-4 编译环境搭建
+title: Letv android-4.x 编译环境搭建
 category: Dev-tools
 tags: [Ubuntu,apt]
 ---
 
-针对公司 Letv android-4 系统编译总结, 对 AOSP 版本的 android v4 系统应该也有借鉴.
+针对公司 Letv android-4.x 系统编译总结, 对 AOSP 版本的 android v4.x 系统应该也有借鉴.
 
-在 Ubuntu Kylin 16 搭建好 AOSP 的 android-2.3.1_r1 编译环境后, 就开始继续搞公司的安卓源码, 本以为 v2.3 这么老的源码都编译好了, 公司的安卓 v4 源码应该不是问题了, 结果还是遇到很多问题.
+在 Ubuntu Kylin 16 搭建好 AOSP 的 android-2.3.1_r1 编译环境后, 就开始继续搞公司的安卓源码, 本以为 v2.3 这么老的源码都编译好了, 公司的安卓 v4.x 源码应该很顺利了, 结果还是遇到很多问题.
 
 ## 版本信息：
 OS: Kylin ubuntu 16.04， 基本等同 ubuntu 16.04， 个人偏爱所以选了 Kylin
@@ -108,9 +108,42 @@ make install
 安装要等好久, 成功后用 update-alternatives 配置 perl 版本
 
 ```shell
+配置前需要注意, 虽然环境变量里的 perl 版本变了, 可有的 perl 脚本, 在第一行就指定了运行脚本的命令, 如
+
+#! /usr/bin/perl
+
+没办法, 只好重命名 /usr/bin/perl
+
+mv /usr/bin/perl /usr/bin/perl_5_22
+
 sudo update-alternatives --install ~/bin/perl perl ~/soft/tools-perl-5.18.2/bin/perl 5182
-sudo update-alternatives --install ~/bin/perl perl /usr/bin/perl 5221
+sudo update-alternatives --install ~/bin/perl perl /usr/bin/perl_5_22 5221
 sudo update-alternatives --config perl
+
+最后通过软链接链过去
+
+ln ~/bin/perl /usr/bin/perl
+
+
 ```
 
 选择 5.18.2 版本的 perl
+
+然后注意这个异常:
+
+> Can't locate Switch.pm in @INC (you may need to install the Switch module) (@INC contains: /home/vvqboy/soft/tools-perl-5.18.2/lib/site_perl/5.18.2/x86_64-linux-thread-multi /home/vvqboy/soft/tools-perl-5.18.2/lib/site_perl/5.18.2 /home/vvqboy/soft/tools-perl-5.18.2/lib/5.18.2/x86_64-linux-thread-multi /home/vvqboy/soft/tools-perl-5.18.2/lib/5.18.2 .) at external/webkit/Source/WebCore/make-hash-tools.pl line 23.
+
+如果只安装了一个版本的 perl, 用
+```shell
+sudo apt-get install libswitch-perl
+```
+可以解决问题.
+
+但多版本的 perl, 就不能依赖 apt 安装 Swtich 了, 则需要切换到指定版本后, 需要用 cpan 命令安装 Swtich
+
+在终端依次输入以下命令:
+```shell
+cpan
+install Switch
+exit
+```
